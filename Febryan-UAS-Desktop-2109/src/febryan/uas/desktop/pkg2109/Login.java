@@ -64,6 +64,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("FORM LOGIN");
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel4.setPreferredSize(new java.awt.Dimension(65, 16));
@@ -134,7 +135,7 @@ public class Login extends javax.swing.JFrame {
             ipassword.setText(null);
             
             Homepage aa = new Homepage();
-            setVisible(true);
+           aa.setVisible(true);
         }else{
             JOptionPane.showMessageDialog(null,"gagal login");
         }
