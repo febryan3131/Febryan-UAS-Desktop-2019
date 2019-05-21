@@ -107,10 +107,10 @@ public class Homepage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cbpilihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbpilihActionPerformed
-       inputtransaksi f1 = new inputtransaksi();
+       inputtransaksi oo = new inputtransaksi();
          Login f2 = new Login();
          
-         f1.setVisible(cbpilih.getSelectedIndex() == 0);
+         oo.setVisible(cbpilih.getSelectedIndex() == 0);
          f2.setVisible(cbpilih.getSelectedIndex() == 1);
     }//GEN-LAST:event_cbpilihActionPerformed
 

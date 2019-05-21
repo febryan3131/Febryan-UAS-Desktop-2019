@@ -192,8 +192,18 @@ public class Input_Transaksi extends javax.swing.JFrame {
         }else if (T.getText().isEmpty()){
            
         }else
+            
         //</editor-fold>
-
+private void Input_Transaksi(){
+     //mengambil model dari tabel yang ada
+        Defaultcetak model = (Defaulcetak) abc.cetak.getModel();
+    model.addRow(new Object[]{
+            tt.getText(),
+            th.getText(), 
+            tj.getText(), 
+            T.getText(),
+            
+        });
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
@@ -220,4 +230,14 @@ public class Input_Transaksi extends javax.swing.JFrame {
     private javax.swing.JLabel total;
     private javax.swing.JTextField tt;
     // End of variables declaration//GEN-END:variables
+
+    private static class Defaultcetak {
+
+        public Defaultcetak() {
+        }
+
+        private void addRow(Object[] object) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }
 }
