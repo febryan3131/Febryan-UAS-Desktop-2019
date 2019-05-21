@@ -12,7 +12,7 @@ package febryan.uas.desktop.pkg2109;
 public class Cetak_Transaksi extends javax.swing.JFrame {
 
     /**
-     * Creates new form Cetak_Transaksi
+   
      */
     public Cetak_Transaksi() {
         initComponents();
@@ -35,6 +35,14 @@ public class Cetak_Transaksi extends javax.swing.JFrame {
         d = new javax.swing.JLabel();
         e = new javax.swing.JLabel();
         btnprint = new javax.swing.JButton();
+        terimabarang = new javax.swing.JLabel();
+        terimatanggal = new javax.swing.JLabel();
+        terimaharga = new javax.swing.JLabel();
+        tjumlah = new javax.swing.JLabel();
+        ttotal = new javax.swing.JLabel();
+        tnama = new javax.swing.JLabel();
+        ttanggal = new javax.swing.JLabel();
+        tharga = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,6 +67,16 @@ public class Cetak_Transaksi extends javax.swing.JFrame {
 
         btnprint.setText("PRINT");
 
+        tjumlah.setText("jLabel2");
+
+        ttotal.setText("jLabel2");
+
+        tnama.setText("jLabel2");
+
+        ttanggal.setText("jLabel2");
+
+        tharga.setText("jLabel2");
+
         javax.swing.GroupLayout cetakLayout = new javax.swing.GroupLayout(cetak);
         cetak.setLayout(cetakLayout);
         cetakLayout.setHorizontalGroup(
@@ -76,8 +94,21 @@ public class Cetak_Transaksi extends javax.swing.JFrame {
                             .addComponent(c, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(b, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(a, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(88, 88, 88)
-                        .addComponent(btnprint)))
+                        .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(cetakLayout.createSequentialGroup()
+                                .addGap(88, 88, 88)
+                                .addComponent(btnprint))
+                            .addGroup(cetakLayout.createSequentialGroup()
+                                .addGap(35, 35, 35)
+                                .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(terimabarang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(terimatanggal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(terimaharga, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(tjumlah, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+                                    .addComponent(ttotal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(tnama, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(ttanggal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(tharga, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addContainerGap(125, Short.MAX_VALUE))
         );
         cetakLayout.setVerticalGroup(
@@ -86,15 +117,28 @@ public class Cetak_Transaksi extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(a)
+                .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(a)
+                    .addComponent(terimabarang)
+                    .addComponent(tnama))
                 .addGap(26, 26, 26)
-                .addComponent(b)
+                .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(b)
+                    .addComponent(terimatanggal)
+                    .addComponent(ttanggal))
                 .addGap(18, 18, 18)
-                .addComponent(c)
+                .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(c)
+                    .addComponent(terimaharga)
+                    .addComponent(tharga))
                 .addGap(18, 18, 18)
-                .addComponent(d)
+                .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(d)
+                    .addComponent(tjumlah))
                 .addGap(18, 18, 18)
-                .addComponent(e)
+                .addGroup(cetakLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(e)
+                    .addComponent(ttotal))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnprint)
                 .addGap(44, 44, 44))
@@ -163,5 +207,13 @@ public class Cetak_Transaksi extends javax.swing.JFrame {
     private javax.swing.JLabel d;
     private javax.swing.JLabel e;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel terimabarang;
+    private javax.swing.JLabel terimaharga;
+    private javax.swing.JLabel terimatanggal;
+    public javax.swing.JLabel tharga;
+    public javax.swing.JLabel tjumlah;
+    public javax.swing.JLabel tnama;
+    public javax.swing.JLabel ttanggal;
+    public javax.swing.JLabel ttotal;
     // End of variables declaration//GEN-END:variables
 }

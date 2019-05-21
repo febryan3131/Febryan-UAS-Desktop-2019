@@ -10,7 +10,7 @@ package febryan.uas.desktop.pkg2109;
  * @author febryan
  */
 public class Input_Transaksi extends javax.swing.JFrame {
-Cetak_Transaksi abcOutput = new Cetak_Transaksi();
+Cetak_Transaksi abc = new Cetak_Transaksi();
     /**
      * Creates new form Input_Transaksi
      */
@@ -37,7 +37,7 @@ Cetak_Transaksi abcOutput = new Cetak_Transaksi();
         jumlah1 = new javax.swing.JLabel();
         btnSubmit = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cb1 = new javax.swing.JComboBox<>();
         tt = new javax.swing.JTextField();
         th = new javax.swing.JTextField();
         tj = new javax.swing.JTextField();
@@ -68,10 +68,15 @@ Cetak_Transaksi abcOutput = new Cetak_Transaksi();
         jumlah1.setText("Jumlah");
 
         btnSubmit.setText("Submit");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubmitActionPerformed(evt);
+            }
+        });
 
         btnCancel.setText("Cancel");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tolak Miskin Sido Muncul", "Pasta Gigi President", "Mie Instant Suami-Istri Dua", "Teh Katak", "Kopi Kapal Terbang", "Minuman Berenergi- Extra Boss" }));
+        cb1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tolak Miskin Sido Muncul", "Pasta Gigi President", "Mie Instant Suami-Istri Dua", "Teh Katak", "Kopi Kapal Terbang", "Minuman Berenergi- Extra Boss" }));
 
         javax.swing.GroupLayout NBLayout = new javax.swing.GroupLayout(NB);
         NB.setLayout(NBLayout);
@@ -94,7 +99,7 @@ Cetak_Transaksi abcOutput = new Cetak_Transaksi();
                         .addComponent(btnCancel))
                     .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(cb1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(tt)
                         .addComponent(th)
                         .addComponent(tj)
@@ -111,7 +116,7 @@ Cetak_Transaksi abcOutput = new Cetak_Transaksi();
                         .addGap(26, 26, 26)
                         .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cb1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(tanggal))
                     .addComponent(tt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -154,6 +159,19 @@ Cetak_Transaksi abcOutput = new Cetak_Transaksi();
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+        // TODO add your handling code here:
+        abc.tnama.setText(cb1.getSelectedItem().toString());
+        abc.ttanggal.setText(tt.getText().toString());
+        abc.tharga.setText(th.getText().toString());
+        abc.tjumlah.setText(tj.getText().toString());
+        abc.ttotal.setText(T.getText().toString());
+        
+        abc.setVisible(true);
+        
+    }//GEN-LAST:event_btnSubmitActionPerformed
+     
+    
     /**
      * @param args the command line arguments
      */
@@ -179,33 +197,12 @@ Cetak_Transaksi abcOutput = new Cetak_Transaksi();
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Input_Transaksi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        private void btnActionPerformed(java.awt.event.ActionEvent evt) {                                    
-     
-       // TODO add your handling code here:
-        if (Tid.getText().isEmpty()) {
-        } else if (tt.getText().isEmpty()){
-           
-        } else if (th.getText().isEmpty()){
-           
-        }else if (tj.getText().isEmpty()){
-           
-        }else if (T.getText().isEmpty()){
-           
-        }else{
-            
-        }
+    }
+
             
         //</editor-fold>
 private void Input_Transaksi(){
      //mengambil model dari tabel yang ada
-        Defaultcetak model = (Defaulcetak) abc.cetak.getModel();
-    model.addRow(new Object[]{
-            tt.getText(),
-            th.getText(), 
-            tj.getText(), 
-            T.getText(),
-            
-        });
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
@@ -220,8 +217,8 @@ private void Input_Transaksi(){
     private javax.swing.JTextField T;
     private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnSubmit;
+    private javax.swing.JComboBox<String> cb1;
     private javax.swing.JLabel harga;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JToggleButton jToggleButton1;
