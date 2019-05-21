@@ -5,12 +5,15 @@
  */
 package febryan.uas.desktop.pkg2109;
 
+import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.showMessageDialog;
+
 /**
  *
  * @author febryan
  */
 public class Login extends javax.swing.JFrame {
-
+ Homepage home = new Homepage();
     /**
      * Creates new form Login
      */
@@ -55,6 +58,12 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setText("Username :");
 
         jLabel3.setText("Password :");
+
+        iusername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iusernameActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("FORM LOGIN");
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -120,9 +129,16 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnloginActionPerformed
 
+    private void iusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iusernameActionPerformed
+       if (iusername.getText().isEmpty()) {
+            showMessageDialog(null, "login gagal");
+        } else if (ipassword.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "login gagal");  
+    }//GEN-LAST:event_iusernameActionPerformed
+       
     /**
      * @param args the command line arguments
-     */
+     *
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

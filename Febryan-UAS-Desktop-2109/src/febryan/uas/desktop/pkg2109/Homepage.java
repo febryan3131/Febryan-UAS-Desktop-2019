@@ -78,7 +78,7 @@ public class Homepage extends javax.swing.JFrame {
             .addGroup(p2Layout.createSequentialGroup()
                 .addGap(77, 77, 77)
                 .addComponent(jLabel2)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
             .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         p2Layout.setVerticalGroup(
@@ -107,7 +107,11 @@ public class Homepage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
+       Inputtransaksi f1 = new inputtransaksi();
+         Login f2 = new Login();
+         
+         f1.setVisible(cbpilih.getSelectedIndex() == 0);
+         f2.setVisible(cbpilih.getSelectedIndex() == 1);
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
