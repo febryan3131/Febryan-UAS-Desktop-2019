@@ -35,7 +35,7 @@ public class Homepage extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         textareahome = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cbpilih = new javax.swing.JComboBox<>();
 
         jMenu1.setText("jMenu1");
 
@@ -58,12 +58,12 @@ public class Homepage extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 51, 255));
         jLabel2.setText("Koperasi Petik");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Input Transaksi", "Logout", "" }));
-        jComboBox1.setSelectedIndex(-1);
-        jComboBox1.setToolTipText("File");
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        cbpilih.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Input Transaksi", "Logout", "" }));
+        cbpilih.setSelectedIndex(-1);
+        cbpilih.setToolTipText("File");
+        cbpilih.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                cbpilihActionPerformed(evt);
             }
         });
 
@@ -79,12 +79,12 @@ public class Homepage extends javax.swing.JFrame {
                 .addGap(77, 77, 77)
                 .addComponent(jLabel2)
                 .addContainerGap(97, Short.MAX_VALUE))
-            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(cbpilih, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         p2Layout.setVerticalGroup(
             p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, p2Layout.createSequentialGroup()
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbpilih, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -106,13 +106,13 @@ public class Homepage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-       Inputtransaksi f1 = new inputtransaksi();
+    private void cbpilihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbpilihActionPerformed
+       inputtransaksi f1 = new inputtransaksi();
          Login f2 = new Login();
          
          f1.setVisible(cbpilih.getSelectedIndex() == 0);
          f2.setVisible(cbpilih.getSelectedIndex() == 1);
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_cbpilihActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,7 +150,7 @@ public class Homepage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> cbpilih;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
