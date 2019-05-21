@@ -79,10 +79,10 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel1" max="32767" attributes="0"/>
                           <Component id="jComboBox1" max="32767" attributes="0"/>
-                          <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="tt" alignment="0" max="32767" attributes="0"/>
+                          <Component id="th" alignment="0" max="32767" attributes="0"/>
+                          <Component id="tj" alignment="0" max="32767" attributes="0"/>
+                          <Component id="T" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="123" max="32767" attributes="0"/>
@@ -104,22 +104,22 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="tanggal" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                      <Component id="tt" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="harga" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="th" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jumlah1" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tj" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="total" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="T" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -207,13 +207,13 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="tt">
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="th">
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="tj">
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="T">
         </Component>
       </SubComponents>
     </Container>

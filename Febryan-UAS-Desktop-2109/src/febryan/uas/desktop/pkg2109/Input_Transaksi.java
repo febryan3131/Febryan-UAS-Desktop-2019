@@ -38,10 +38,10 @@ public class Input_Transaksi extends javax.swing.JFrame {
         btnSubmit = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        tt = new javax.swing.JTextField();
+        th = new javax.swing.JTextField();
+        tj = new javax.swing.JTextField();
+        T = new javax.swing.JTextField();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -95,10 +95,10 @@ public class Input_Transaksi extends javax.swing.JFrame {
                     .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField1)
-                        .addComponent(jTextField2)
-                        .addComponent(jTextField3)
-                        .addComponent(jTextField4)))
+                        .addComponent(tt)
+                        .addComponent(th)
+                        .addComponent(tj)
+                        .addComponent(T)))
                 .addContainerGap(123, Short.MAX_VALUE))
         );
         NBLayout.setVerticalGroup(
@@ -114,19 +114,19 @@ public class Input_Transaksi extends javax.swing.JFrame {
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(tanggal))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(harga)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(th, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10)
                 .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jumlah1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(T, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(NBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSubmit)
@@ -179,29 +179,45 @@ public class Input_Transaksi extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Input_Transaksi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        private void btnActionPerformed(java.awt.event.ActionEvent evt) {                                    
+     
+       // TODO add your handling code here:
+        if (Tid.getText().isEmpty()) {
+        } else if (tt.getText().isEmpty()){
+           
+        } else if (th.getText().isEmpty()){
+           
+        }else if (tj.getText().isEmpty()){
+           
+        }else if (T.getText().isEmpty()){
+           
+        }else
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Input_Transaksi().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Input_Transaksi().setVisible(true);
+            }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel NB;
+    private javax.swing.JTextField T;
     private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnSubmit;
     private javax.swing.JLabel harga;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel jumlah1;
     private javax.swing.JLabel tanggal;
+    private javax.swing.JTextField th;
+    private javax.swing.JTextField tj;
     private javax.swing.JLabel total;
+    private javax.swing.JTextField tt;
     // End of variables declaration//GEN-END:variables
 }
