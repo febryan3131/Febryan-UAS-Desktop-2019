@@ -10,7 +10,7 @@ package febryan.uas.desktop.pkg2109;
  * @author febryan
  */
 public class Input_Transaksi extends javax.swing.JFrame {
-
+Cetak_Transaksi abcOutput = new Cetak_Transaksi();
     /**
      * Creates new form Input_Transaksi
      */
@@ -191,7 +191,9 @@ public class Input_Transaksi extends javax.swing.JFrame {
            
         }else if (T.getText().isEmpty()){
            
-        }else
+        }else{
+            
+        }
             
         //</editor-fold>
 private void Input_Transaksi(){

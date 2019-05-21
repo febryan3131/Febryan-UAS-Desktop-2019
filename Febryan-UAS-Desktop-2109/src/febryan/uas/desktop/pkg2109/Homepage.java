@@ -59,7 +59,6 @@ public class Homepage extends javax.swing.JFrame {
         jLabel2.setText("Koperasi Petik");
 
         cbpilih.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Input Transaksi", "Logout", "" }));
-        cbpilih.setSelectedIndex(-1);
         cbpilih.setToolTipText("File");
         cbpilih.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,7 +106,7 @@ public class Homepage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cbpilihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbpilihActionPerformed
-       inputtransaksi oo = new inputtransaksi();
+       Input_Transaksi oo = new Input_Transaksi();
          Login f2 = new Login();
          
          oo.setVisible(cbpilih.getSelectedIndex() == 0);
